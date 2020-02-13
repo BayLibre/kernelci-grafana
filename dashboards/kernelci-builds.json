@@ -83,7 +83,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_GOOGLE_BIGQUERY}",
+      "datasource": "DS_GOOGLE_BIGQUERY",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -185,7 +185,7 @@
       "valueName": "avg"
     },
     {
-      "datasource": "${DS_GOOGLE_BIGQUERY}",
+      "datasource": "DS_GOOGLE_BIGQUERY",
       "gridPos": {
         "h": 6,
         "w": 11,
@@ -269,7 +269,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_GOOGLE_BIGQUERY}",
+      "datasource": "DS_GOOGLE_BIGQUERY",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -384,7 +384,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_GOOGLE_BIGQUERY}",
+      "datasource": "DS_GOOGLE_BIGQUERY",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -495,7 +495,7 @@
     },
     {
       "columns": [],
-      "datasource": "${DS_GOOGLE_BIGQUERY}",
+      "datasource": "DS_GOOGLE_BIGQUERY",
       "fontSize": "90%",
       "gridPos": {
         "h": 15,
@@ -701,7 +701,7 @@
       {
         "allValue": "\"%\"",
         "current": {},
-        "datasource": "${DS_GOOGLE_BIGQUERY}",
+        "datasource": "DS_GOOGLE_BIGQUERY",
         "definition": "SELECT architecture FROM ${DB_NAME}.builds",
         "hide": 0,
         "includeAll": true,
@@ -723,7 +723,7 @@
       {
         "allValue": "\"%\"",
         "current": {},
-        "datasource": "${DS_GOOGLE_BIGQUERY}",
+        "datasource": "DS_GOOGLE_BIGQUERY",
         "definition": "SELECT origin FROM ${DB_NAME}.builds",
         "hide": 0,
         "includeAll": true,
@@ -745,7 +745,7 @@
       {
         "allValue": "\"%\"",
         "current": {},
-        "datasource": "${DS_GOOGLE_BIGQUERY}",
+        "datasource": "DS_GOOGLE_BIGQUERY",
         "definition": "SELECT DISTINCT revision_origin_id FROM ${DB_NAME}.builds WHERE architecture LIKE ${arch_search} AND origin_id LIKE ${origin_search} AND UNIX_MILLIS(start_time) BETWEEN ${__from} AND ${__to}",
         "hide": 0,
         "includeAll": true,
